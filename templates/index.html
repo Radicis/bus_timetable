@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">  
+  <title>CIT Bus times</title>  
+
+ 	<meta http-equiv="Content-type" name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+  <script src="static/js/vendor/pd-cookie-functions.js"></script>
+  <link rel="stylesheet" href="static/style/main.css" />
+
+</head>
+
+<body>
+<div id="loading"><h3>Waiting for Bus Eireann...</h3><img src="static/img/ajax-loader.gif" /></div>
+<div id="wrapper">
+	<div id="container">
+		<h2>CIT Bus times</h2>
+		<hr />
+		<p id="route"></p>
+		<table id="stoptable" class="stoptable">
+			<tr>
+			<th>Route</th><th>Direction</th><th>Time</th>
+			</tr>
+		</table>
+		<p id="route2"></p>
+		<table id="stoptable2" class="stoptable">
+			<tr>
+			<th>Route</th><th>Direction</th><th>Time</th>
+			</tr>
+		</table>
+		<select id="stoplist">
+		
+		</select>
+	</div>
+		
+		<nav id="menu">
+
+			<div id="options">
+				<a id="s205" class="button" >205</a>
+				<a id="s219" class="button" >219</a>
+				 -- Choose Route
+			</div>
+			<div id="refresh">
+				<a class="button" href="/"><img src="static/img/refresh.png" /></a>
+			</div>
+		</nav>
+</div> <!--  End Wrapper -->
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="static/js/main.js"></script>
+</body>
+</html>
